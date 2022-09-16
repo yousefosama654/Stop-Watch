@@ -1,9 +1,9 @@
 #include<avr/io.h>
 #include<avr/interrupt.h>
 #include<avr/delay.h>
-unsigned char secs = 55;    //seconds of the system
-unsigned char mins = 59;   // minutes of the system
-unsigned char hours = 23; // hours of the system
+unsigned char secs = 0;    //seconds of the system
+unsigned char mins = 0;   // minutes of the system
+unsigned char hours = 0; // hours of the system
 unsigned char tick=0;   // the tick  of timer
 ISR(INT0_vect) {
 	secs = 0;
